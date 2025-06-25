@@ -62,7 +62,9 @@ public class Baseclass {
 		/*
 		 * select the browser based on condition 
 		 */
-		String browser = pf.getdatafromthepropertyfile("browser");
+		//String browser = pf.getdatafromthepropertyfile("browser");
+		String browser = System.getProperty("browser");
+
 
 		if(browser.contains("chrome"))
 		{
@@ -88,9 +90,12 @@ public class Baseclass {
 		/*
 		 * getting url,username,password from property file
 		 */
-		String url = pf.getdatafromthepropertyfile("url");
-		String username1 = pf.getdatafromthepropertyfile("username");
-		String password1 = pf.getdatafromthepropertyfile("password");
+		//String url = pf.getdatafromthepropertyfile("url");
+		//String username1 = pf.getdatafromthepropertyfile("username");
+		//String password1 = pf.getdatafromthepropertyfile("password");
+		String url = System.getProperty("url");
+		String username1 = System.getProperty("username");
+		String password1 =System.getProperty("password");
 		/*
 		 * trigger the url 
 		 */
