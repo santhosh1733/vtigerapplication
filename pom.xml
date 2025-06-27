@@ -3,9 +3,10 @@
   <groupId>teypyramidpractice</groupId>
   <artifactId>teypyramidpractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
   <profiles>
-  <profile>
-  <id>BT</id>
+   <profile>
+   <id>BatchSuiteTest</id>
    <build>
     <plugins>
       <plugin>
@@ -23,7 +24,7 @@
   </profile>
   
   <profile>
-  <id>CBT</id>
+  <id>CrossBrowserTest</id>
    <build>
     <plugins>
       <plugin>
@@ -41,7 +42,7 @@
   </profile>
   
   <profile>
-  <id>PST</id>
+  <id>ParallelSuiteTest</id>
    <build>
     <plugins>
       <plugin>
@@ -59,7 +60,7 @@
   </profile>
   
   <profile>
-  <id>GT</id>
+  <id>GroupSuiteTest</id>
    <build>
     <plugins>
       <plugin>
