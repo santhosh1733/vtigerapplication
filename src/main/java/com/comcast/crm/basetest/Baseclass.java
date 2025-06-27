@@ -6,6 +6,7 @@ import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -72,9 +73,9 @@ public class Baseclass {
 		}	
 		else if(browser.contains("firefox")) {
 			 driver=new FirefoxDriver();
-		}else
+		}else if(browser.contains("edge"))
 		{
-			 driver=new ChromeDriver();
+			 driver=new EdgeDriver();
 		}
 		/*
 		 * set the driver value into static driver variable 
