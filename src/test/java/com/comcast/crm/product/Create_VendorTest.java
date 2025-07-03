@@ -43,10 +43,10 @@ public class Create_VendorTest  extends Baseclass {
 		String phonenumber = vendorinfo.getPhonenumbertextfield().getText();
 		String vederno = vendorinfo.getVendornotextfield().getText();
 		
-		assertTrue(headermassage.contains(vendarname));
+		assertTrue(headermassage.equals(vendarname));
 		
 		SoftAssert sassert=new SoftAssert();
-		sassert.assertTrue(phonenumber.contains(phonenum));
+		sassert.assertTrue(phonenumber.equals(phonenum));
 		sassert.assertAll();
 		
 		int row = excel.getLastRow("vendorinfo")+1;

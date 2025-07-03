@@ -2,6 +2,7 @@ package practice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,11 +14,10 @@ public class automationtesting {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://testautomationpractice.blogspot.com/");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0, 1300)");
-		Actions a=new Actions(driver);
-		WebElement drag = driver.findElement(By.xpath("//p[text()='Drag me to my target']"));
-		WebElement drop = driver.findElement(By.xpath("//p[text()='Drop here']"));
-         a.dragAndDrop(drag, drop).perform();
+		js.executeScript("window.scrollBy(0, 2500)");
+		SearchContext shadorootele = driver.findElement(By.id("shadow_host")).getShadowRoot();
+		shadorootele.findElement(By.cssSelector("input[type='text']")).sendKeys("abcd");
+		
 	}
 
 }

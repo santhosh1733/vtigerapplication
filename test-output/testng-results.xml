@@ -1,100 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[[ ACC26557 ] org_8851 - Organization Information]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-06-27T10:14:29 IST" name="Suite" finished-at="2025-06-27T10:14:30 IST" duration-ms="84">
+  <suite started-at="2025-07-03T17:57:03 IST" name="Suite" finished-at="2025-07-03T17:58:04 IST" duration-ms="61767">
     <groups>
       <group name="RegressionTest">
-        <method signature="Create_Org_With_Type_And_IndustryTest.orgWithTypeAndIndustry()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@14cd1699]" name="orgWithTypeAndIndustry" class="com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest"/>
+        <method signature="Create_Org_With_Type_And_IndustryTest.orgWithTypeAndIndustry()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" name="orgWithTypeAndIndustry" class="com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2025-06-27T10:14:29 IST" name="Test" finished-at="2025-06-27T10:14:30 IST" duration-ms="84">
+    <test started-at="2025-07-03T17:57:03 IST" name="Test" finished-at="2025-07-03T17:58:04 IST" duration-ms="61767">
       <class name="com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@14cd1699]" started-at="2025-06-27T10:14:29 IST" name="configBC" finished-at="2025-06-27T10:14:29 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "browser" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "browser" is null
-at com.comcast.crm.basetest.Baseclass.configBC(Baseclass.java:69)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="confiBS()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:57:03 IST" name="confiBS" finished-at="2025-07-03T17:57:03 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@14cd1699]" started-at="2025-06-27T10:14:29 IST" name="configBM" finished-at="2025-06-27T10:14:29 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- confiBS -->
+        <test-method is-config="true" signature="BT()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:57:03 IST" name="BT" finished-at="2025-07-03T17:57:11 IST" duration-ms="8735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:57:11 IST" name="configBM" finished-at="2025-07-03T17:57:25 IST" duration-ms="13709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="orgWithTypeAndIndustry()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@14cd1699]" started-at="2025-06-27T10:14:29 IST" name="orgWithTypeAndIndustry" finished-at="2025-06-27T10:14:29 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "browser" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "browser" is null
-at com.comcast.crm.basetest.Baseclass.configBC(Baseclass.java:69)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="orgWithTypeAndIndustry()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:57:25 IST" name="orgWithTypeAndIndustry" finished-at="2025-07-03T17:58:01 IST" duration-ms="36315" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[ ACC26557 ] org_8851 - Organization Information]]>
+            </line>
           </reporter-output>
         </test-method> <!-- orgWithTypeAndIndustry -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@14cd1699]" started-at="2025-06-27T10:14:29 IST" name="configAM" finished-at="2025-06-27T10:14:29 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:58:01 IST" name="configAM" finished-at="2025-07-03T17:58:03 IST" duration-ms="1910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@14cd1699]" started-at="2025-06-27T10:14:30 IST" name="configAC" finished-at="2025-06-27T10:14:30 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:58:03 IST" name="configAC" finished-at="2025-07-03T17:58:04 IST" duration-ms="1021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->

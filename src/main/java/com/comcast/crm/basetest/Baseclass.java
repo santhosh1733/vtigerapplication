@@ -1,19 +1,24 @@
 package com.comcast.crm.basetest;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.sql.SQLException;
+import java.util.HashMap;
 
-
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -38,33 +43,52 @@ import com.comcast.crm.pomclass.loginPage;
  *  
  */
 public class Baseclass {
-	public WebDriver driver=null;
+	public RemoteWebDriver driver=null;
     public DataBaseUtility db=new DataBaseUtility();
     public PropertyFileUtility pf=new PropertyFileUtility();
     public WebDriverUtility wd=new WebDriverUtility();
     public ExecelSheetUtility excel=new ExecelSheetUtility();
     public JavaUtility java=new JavaUtility();
+    MutableCapabilities capabilities = new MutableCapabilities();
    
     /**
      * 
      * This method invoke each time before a suite will be invoked
+     * @throws MalformedURLException 
      */
-	//@BeforeSuite (groups = {"smokeTest","RegressionTest"})
-	public void confiBS() throws SQLException {
-		db.getConnection();
+	@BeforeSuite (groups = {"smokeTest","RegressionTest"})
+	public void confiBS() throws SQLException, MalformedURLException {
+		
+
+		
+		//db.getConnection();
+	}
+	@BeforeTest
+	public void BT() throws MalformedURLException {
+		HashMap<String, Object> bstackOptions = new HashMap<String, Object>();
+		capabilities.setCapability("browserName", "Chrome");
+		bstackOptions.put("os", "Windows");
+		bstackOptions.put("osVersion", "10");
+		bstackOptions.put("browserVersion", "120.0");
+		bstackOptions.put("consoleLogs", "info");
+		capabilities.setCapability("bstack:options", bstackOptions);
+		String username="santhoshnagaraj_UHAQjl";
+		String password="9ms7ynKvxSP8qA6grxGw";
+	    driver=new RemoteWebDriver(new URL("https://"+username+":"+password+"@hub-cloud.browserstack.com/wd/hub"), capabilities);
+
 	}
 	
 	/**
 	 * This method invoke each time before a class will be invoked class
 	 */
 	//@Parameters("browser")
-	@BeforeClass (groups = {"smokeTest","RegressionTest"})
+	//@BeforeClass (groups = {"smokeTest","RegressionTest"})
 	public void configBC() throws IOException {
 		/*
 		 * select the browser based on condition 
 		 */
-		//String browser = pf.getdatafromthepropertyfile("browser");
-		String browser = System.getProperty("browser");
+		String browser = pf.getdatafromthepropertyfile("browser");
+		//String browser = System.getProperty("browser");
 
 
 		if(browser.contains("chrome"))
@@ -91,12 +115,12 @@ public class Baseclass {
 		/*
 		 * getting url,username,password from property file
 		 */
-		//String url = pf.getdatafromthepropertyfile("url");
-		//String username1 = pf.getdatafromthepropertyfile("username");
-		//String password1 = pf.getdatafromthepropertyfile("password");
-		String url = System.getProperty("url");
-		String username1 = System.getProperty("username");
-		String password1 =System.getProperty("password");
+		String url = pf.getdatafromthepropertyfile("url");
+		String username1 = pf.getdatafromthepropertyfile("username");
+		String password1 = pf.getdatafromthepropertyfile("password");
+		//String url = System.getProperty("url");
+		//String username1 = System.getProperty("username");
+		//String password1 =System.getProperty("password");
 		/*
 		 * trigger the url 
 		 */

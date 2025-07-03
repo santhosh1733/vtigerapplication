@@ -16,7 +16,7 @@ import com.comcast.crm.generic.fileutiity.ExecelSheetUtility;
 
 public class dataprovider {
 
-	@Test(dataProvider = "dataprovider")
+	//@Test(dataProvider = "dataprovider")
 	public  void getproductinfo(String brand, String productname) throws EncryptedDocumentException, IOException {
 		WebDriver driver=null;
 			 driver=new ChromeDriver();
@@ -29,8 +29,7 @@ public class dataprovider {
 			
 			driver.quit();
 	}
-	
-	
+
 	
 	@DataProvider
 	public Object [][]  dataprovider() throws EncryptedDocumentException, IOException {

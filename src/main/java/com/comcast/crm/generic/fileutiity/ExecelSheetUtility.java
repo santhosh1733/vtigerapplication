@@ -154,6 +154,8 @@ String filePath = "C:\\Users\\santhosh\\eclipse-workspace\\teypyramidpractice\\s
 		FileInputStream fis=new FileInputStream("C:\\\\Users\\\\santhosh\\\\eclipse-workspace\\\\teypyramidpractice\\\\src\\\\test\\\\resources\\\\TestData2.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet esheet = wb.getSheet(sheet);
+	// int lastrow = esheet.getLastRowNum();
+	//int lastcell = esheet.getRow(lastrow).getLastCellNum();
 		int i=1;int j=0;
 		for(;i<row;i++) {
 			Row erow = esheet.getRow(row);
