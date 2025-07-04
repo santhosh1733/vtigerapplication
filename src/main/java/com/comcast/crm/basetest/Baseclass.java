@@ -63,8 +63,13 @@ public class Baseclass {
 		
 		//db.getConnection();
 	}
-	@BeforeTest
-	public void BT() throws MalformedURLException {
+	
+	/**
+	 * This method invoke each time before a class will be invoked class
+	 */
+	//@Parameters("browser")
+	@BeforeClass (groups = {"smokeTest","RegressionTest"})
+	public void configBC() throws IOException {
 		HashMap<String, Object> bstackOptions = new HashMap<String, Object>();
 		capabilities.setCapability("browserName", "Chrome");
 		bstackOptions.put("os", "Windows");
@@ -75,23 +80,14 @@ public class Baseclass {
 		String username="santhoshnagaraj_UHAQjl";
 		String password="9ms7ynKvxSP8qA6grxGw";
 	    driver=new RemoteWebDriver(new URL("https://"+username+":"+password+"@hub-cloud.browserstack.com/wd/hub"), capabilities);
-
-	}
-	
-	/**
-	 * This method invoke each time before a class will be invoked class
-	 */
-	//@Parameters("browser")
-	//@BeforeClass (groups = {"smokeTest","RegressionTest"})
-	public void configBC() throws IOException {
 		/*
 		 * select the browser based on condition 
 		 */
-		String browser = pf.getdatafromthepropertyfile("browser");
+		//String browser = pf.getdatafromthepropertyfile("browser");
 		//String browser = System.getProperty("browser");
 
 
-		if(browser.contains("chrome"))
+		/*if(browser.contains("chrome"))
 		{
 			driver=new ChromeDriver();
 		}	

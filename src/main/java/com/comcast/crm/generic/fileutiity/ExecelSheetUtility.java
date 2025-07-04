@@ -143,6 +143,7 @@ String filePath = "C:\\Users\\santhosh\\eclipse-workspace\\teypyramidpractice\\s
             cell1.setCellValue(cellvalue); 
             wb.write(fos);
         } catch (IOException e) {
+        	
             e.printStackTrace();
         }
 		
