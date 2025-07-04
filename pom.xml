@@ -69,7 +69,7 @@
         <version>2.18.1</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>group_suiteTest.xml</suiteXmlFile>
+            <suiteXmlFile>Groupexecution.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
