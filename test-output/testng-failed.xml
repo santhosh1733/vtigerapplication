@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demotesting.dataprovider">
+      <class name="com.comcast.crm.orgtest.CreateAndDeleteOrgTest">
         <methods>
-          <include name="demotest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="deletorg"/>
         </methods>
-      </class> <!-- demotesting.dataprovider -->
+      </class> <!-- com.comcast.crm.orgtest.CreateAndDeleteOrgTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

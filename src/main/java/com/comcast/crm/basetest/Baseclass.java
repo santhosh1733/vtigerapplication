@@ -56,7 +56,7 @@ public class Baseclass {
      * This method invoke each time before a suite will be invoked
      * @throws MalformedURLException 
      */
-	@BeforeSuite (groups = {"smokeTest","RegressionTest"})
+	//@BeforeSuite (groups = {"smokeTest","RegressionTest"})
 	public void confiBS() throws SQLException, MalformedURLException {
 		
 
@@ -70,6 +70,7 @@ public class Baseclass {
 	//@Parameters("browser")
 	@BeforeClass (groups = {"smokeTest","RegressionTest"})
 	public void configBC() throws IOException {
+		
 		HashMap<String, Object> bstackOptions = new HashMap<String, Object>();
 		capabilities.setCapability("browserName", "Chrome");
 		bstackOptions.put("os", "Windows");
@@ -111,12 +112,12 @@ public class Baseclass {
 		/*
 		 * getting url,username,password from property file
 		 */
-		//String url = pf.getdatafromthepropertyfile("url");
-		//String username1 = pf.getdatafromthepropertyfile("username");
-		//String password1 = pf.getdatafromthepropertyfile("password");
-		String url = System.getProperty("url");
-		String username1 = System.getProperty("username");
-		String password1 =System.getProperty("password");
+		String url = pf.getdatafromthepropertyfile("url");
+		String username1 = pf.getdatafromthepropertyfile("username");
+		String password1 = pf.getdatafromthepropertyfile("password");
+		//String url = System.getProperty("url");
+		//String username1 = System.getProperty("username");
+		//String password1 =System.getProperty("password");
 		/*
 		 * trigger the url 
 		 */

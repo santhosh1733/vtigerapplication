@@ -1,46 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[ ACC26557 ] org_8851 - Organization Information]]>
+      <![CDATA[[ ACC26709 ] org_3881 - Organization Information]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-03T17:57:03 IST" name="Suite" finished-at="2025-07-03T17:58:04 IST" duration-ms="61767">
+  <suite started-at="2025-07-04T15:36:20 IST" name="Default suite" finished-at="2025-07-04T15:36:52 IST" duration-ms="32343">
     <groups>
       <group name="RegressionTest">
-        <method signature="Create_Org_With_Type_And_IndustryTest.orgWithTypeAndIndustry()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" name="orgWithTypeAndIndustry" class="com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest"/>
+        <method signature="CreateAndDeleteOrgTest.deletorg()[pri:0, instance:com.comcast.crm.orgtest.CreateAndDeleteOrgTest@3e694b3f]" name="deletorg" class="com.comcast.crm.orgtest.CreateAndDeleteOrgTest"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2025-07-03T17:57:03 IST" name="Test" finished-at="2025-07-03T17:58:04 IST" duration-ms="61767">
-      <class name="com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest">
-        <test-method is-config="true" signature="confiBS()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:57:03 IST" name="confiBS" finished-at="2025-07-03T17:57:03 IST" duration-ms="11" status="PASS">
+    <test started-at="2025-07-04T15:36:20 IST" name="Default test" finished-at="2025-07-04T15:36:52 IST" duration-ms="32343">
+      <class name="com.comcast.crm.orgtest.CreateAndDeleteOrgTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.orgtest.CreateAndDeleteOrgTest@3e694b3f]" started-at="2025-07-04T15:36:20 IST" name="configBC" finished-at="2025-07-04T15:36:30 IST" duration-ms="9885" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- confiBS -->
-        <test-method is-config="true" signature="BT()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:57:03 IST" name="BT" finished-at="2025-07-03T17:57:11 IST" duration-ms="8735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BT -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:57:11 IST" name="configBM" finished-at="2025-07-03T17:57:25 IST" duration-ms="13709" status="PASS">
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.orgtest.CreateAndDeleteOrgTest@3e694b3f]" started-at="2025-07-04T15:36:30 IST" name="configBM" finished-at="2025-07-04T15:36:34 IST" duration-ms="4855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="orgWithTypeAndIndustry()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:57:25 IST" name="orgWithTypeAndIndustry" finished-at="2025-07-03T17:58:01 IST" duration-ms="36315" status="PASS">
+        <test-method signature="deletorg()[pri:0, instance:com.comcast.crm.orgtest.CreateAndDeleteOrgTest@3e694b3f]" started-at="2025-07-04T15:36:34 IST" name="deletorg" finished-at="2025-07-04T15:36:48 IST" duration-ms="13937" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='org_3881']/../../td[8]/a[text()='del']"}
+  (Session info: chrome=120.0.6099.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f576f4d18a359ff92ff1cdcecd55cb4a2708fdd1, findElement {value=//a[text()='org_3881']/../../td[8]/a[text()='del'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.63, chrome: {chromedriverVersion: 120.0.6099.62 (93ab19d804d4..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:3090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f576f4d18a359ff92ff1cdcecd5...}
+Session ID: f576f4d18a359ff92ff1cdcecd55cb4a2708fdd1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='org_3881']/../../td[8]/a[text()='del']"}
+  (Session info: chrome=120.0.6099.63)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f576f4d18a359ff92ff1cdcecd55cb4a2708fdd1, findElement {value=//a[text()='org_3881']/../../td[8]/a[text()='del'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.63, chrome: {chromedriverVersion: 120.0.6099.62 (93ab19d804d4..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:3090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f576f4d18a359ff92ff1cdcecd5...}
+Session ID: f576f4d18a359ff92ff1cdcecd55cb4a2708fdd1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.comcast.crm.orgtest.CreateAndDeleteOrgTest.deletorg(CreateAndDeleteOrgTest.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[[ ACC26557 ] org_8851 - Organization Information]]>
+              <![CDATA[[ ACC26709 ] org_3881 - Organization Information]]>
             </line>
           </reporter-output>
-        </test-method> <!-- orgWithTypeAndIndustry -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:58:01 IST" name="configAM" finished-at="2025-07-03T17:58:03 IST" duration-ms="1910" status="PASS">
+        </test-method> <!-- deletorg -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.orgtest.CreateAndDeleteOrgTest@3e694b3f]" started-at="2025-07-04T15:36:49 IST" name="configAM" finished-at="2025-07-04T15:36:51 IST" duration-ms="1731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest@6a78afa0]" started-at="2025-07-03T17:58:03 IST" name="configAC" finished-at="2025-07-03T17:58:04 IST" duration-ms="1021" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.orgtest.CreateAndDeleteOrgTest@3e694b3f]" started-at="2025-07-04T15:36:51 IST" name="configAC" finished-at="2025-07-04T15:36:52 IST" duration-ms="1438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.comcast.crm.orgtest.Create_Org_With_Type_And_IndustryTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.comcast.crm.orgtest.CreateAndDeleteOrgTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
